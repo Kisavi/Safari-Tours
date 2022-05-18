@@ -20,4 +20,14 @@ def review():
 
 @main.route('/profile')
 def profile():
-    return render_template('profile.html')    
+    return render_template('profile.html') 
+
+
+@main.route('/bookings')
+def bookings():
+    return render_template('bookings.html')   
+
+
+@main.route('/landing')
+def landing():
+    return render_template('landing-page.html')           

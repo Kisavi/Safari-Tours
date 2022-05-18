@@ -1,17 +1,92 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div>
-    <div class="header-dark">
-        <div class="container hero">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <h1 class="text-center">The Revolution is Here.</h1>
-                    <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"></iframe></div>
-                </div>
-            </div>
+<div class="wrapper">
+    <div class="page-header page-header-small">
+      <div class="content-center">
+        <div class="container">
+          <h1 class="title mb-5">This is our great company.</h1>
+          <div class="text-center">
+            <button type="button" class="btn btn-secondary">Book a slot</button>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+    <div class="section section-about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12  text-center">
+            <h2 class="title2">Who we are?</h2>
+            <h5 class="description8">We offer safari services plus luxurious transportation to and from anywhere in the Kenya area partnered with all the essentials you need to ensure a successful business event or special occasion.</h5>
+          </div>
+        </div>
+        <div class="separator separator-primary"></div>
+        <div class="section-story-overview">
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="image-container image-left" style="background-image: url('https://raw.githack.com/creativetimofficial/now-ui-kit/master/assets/img/login.jpg')">
+                    <!-- First image on the left side -->
+                    <p class="blockquote blockquote-primary mt-5">"Choose from a wide range of safari destinations and adventures. Holidays in Kenya include game reserves, camping and national parks. "
+                      <br>
+                      <br>
+                      <button type="button" class="btn btn-secondary">Book a slot</button>
+                    </p>
+                  </div>
+                  <!-- Second image on the left side of the article -->
+                  <div class="image-container" style="background-image: url('https://raw.githack.com/creativetimofficial/now-ui-kit/master/assets/img/bg3.jpg')"></div>
+                </div>
+                <div class="col-md-5">
+                  <!-- First image on the right side, above the article -->
+                  <div class="image-container image-right" style="background-image: url('https://raw.githack.com/creativetimofficial/now-ui-kit/master/assets/img/bg1.jpg')"></div>
+                  <h3 class="mt-5">Why Customers Love Us?</h3>
+                  <p>With over three decades’ experience putting together dream holidays for our valued guests, we are passionate about bringing your perfect holiday to life. 
+                  </p>
+                  <p>
+                    Based in Kenya, our unparalleled knowledge of the country and our contacts with leading safari lodges, camps and guides means we can create a unique experience, completely tailored to suit your interests. 
+                  </p>
+                  <p>Whether you’re looking for a luxury safari and beach escape or want to get up close to wildlife while glamping, we take care of everything for you, so you can create memories that last a lifetime.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section section-team text-center mb-5">
+          <div class="container">
+            <h2 class="mb-5">Previous safaris</h2>
+            <div class="team">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="team-player">
+                    <img src="../static/images/img2.jpg" alt="Thumbnail Image" class="mb-2 img-fluid img-raised">
+                    <h4 class="">Tsavo East</h4>
+                    <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                      for people to be able to follow them outside the site.</p>
+                      <button type="button" class="btn btn-secondary">Review</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="team-player">
+                    <img src="../static/images/img1.jpg" alt="Thumbnail Image" class="mb-2 img-fluid img-raised">
+                    <h4 class="">Nairobi National Park</h4>
+                    <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                       for people to be able to follow them outside the site.</p>
+                       <button type="button" class="btn btn-secondary">Review</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="team-player">
+                    <img src="../static/images/img3.jpg" alt="Thumbnail Image" class="mb-2 img-fluid img-raised">
+                    <h4 class="">Amboseli</h4>
+                    <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                       for people to be able to follow them outside the site.</p>
+                       <button type="button" class="btn btn-secondary">Review</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
 {% endblock %}
