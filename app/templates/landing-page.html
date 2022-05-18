@@ -2,16 +2,40 @@
 
 {% block content %}
 <div class="wrapper">
-    <div class="page-header page-header-small">
-      <div class="content-center">
-        <div class="container">
-          <h1 class="title mb-5">This is our great company.</h1>
-          <div class="text-center">
-            <button type="button" class="btn btn-secondary">Book a slot</button>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../static/images/elp.jpg" height="640" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h3 class="mb-5"> Adventure Awaits, Go Find It</h3>
+                <button type="button" class="btn btn-secondary"><a href="/bookings" class="no-decorations">Book a slot</a></button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../static/images/img3.jpg" height="640" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h3 class="mb-5">Book With Us And Book It Out Of Here!</h3>
+                <button type="button" class="btn btn-dark"><a href="/bookings" class="no-decorations">Book a slot</a></button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../static/images/mdl.jpg" height="640" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h3 class="mb-5"> Inspiring Destinations Within Your Reach.</h3>
+                <button type="button" class="btn btn-secondary"><a href="/bookings" class="no-decorations">Book a slot</a></button>
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
+
     <div class="section section-about-us">
       <div class="container">
         <div class="row">
@@ -29,7 +53,7 @@
                     <p class="blockquote blockquote-primary mt-5">"Choose from a wide range of safari destinations and adventures. Holidays in Kenya include game reserves, camping and national parks. "
                       <br>
                       <br>
-                      <button type="button" class="btn btn-secondary">Book a slot</button>
+                      <button type="button" class="btn btn-secondary"><a href="/bookings" class="no-decorations">Book a slot</a></button>
                     </p>
                   </div>
                   <!-- Second image on the left side of the article -->
@@ -63,7 +87,7 @@
                     <h4 class="">Tsavo East</h4>
                     <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                       for people to be able to follow them outside the site.</p>
-                      <button type="button" class="btn btn-secondary">Review</button>
+                      <button type="button" class="btn btn-secondary"><a href="/review" class="no-decorations">Review</a></button>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -72,7 +96,7 @@
                     <h4 class="">Nairobi National Park</h4>
                     <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                        for people to be able to follow them outside the site.</p>
-                       <button type="button" class="btn btn-secondary">Review</button>
+                       <button type="button" class="btn btn-secondary"><a href="/review" class="no-decorations">Review</a></button>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -81,7 +105,7 @@
                     <h4 class="">Amboseli</h4>
                     <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                        for people to be able to follow them outside the site.</p>
-                       <button type="button" class="btn btn-secondary">Review</button>
+                       <button type="button" class="btn btn-secondary"><a href="/review" class="no-decorations">Review</a></button>
                     </div>
                   </div>
                 </div>

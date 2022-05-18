@@ -1,8 +1,21 @@
-.page-header {
+.carousel {
     height: 50vh;
     background: url('../images/elp.jpg');
     background-size: cover;
     background-position: center;
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+
+.no-decorations {
+    text-decoration: none;
+    color: #fff;
+}
+.no-decorations:hover {
+    color: #fff;
 }
 
 .title {
