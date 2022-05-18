@@ -4,4 +4,4 @@ from flask import render_template, url_for, redirect, request
 
 @main.route('/')
 def index():
-    return render_template('comments.html')
+    return render_template('landing-page.html')
