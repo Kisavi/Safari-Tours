@@ -17,3 +17,7 @@ def signup():
 @main.route('/review')
 def review():
     return render_template('comments.html')
+
+@main.route('/profile')
+def profile():
+    return render_template('profile.html')    

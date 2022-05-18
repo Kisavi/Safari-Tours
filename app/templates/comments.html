@@ -2,33 +2,43 @@
 
 {% block content %}
 <!-- Main Body -->
-<section>
+<section class="comments-sec">
     <div class="container">
-        <div class="row">
+        <div class="row gen">
             <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
-                <form id="algin-form">
-                    <div class="form-group">
-                        <label for="name">Nickname</label>
-                        <input type="text" name="name" id="fullname" class="form-control">
+                <form id="algin-form" class="comment-form">
+                    <h4>Leave a comment</h4>
+                    <div class="form-group form5">
+                        <label class="label1" for="name">Nickname</label>
+                        <input type="text" name="name" id="fullname" class="form-control input2"
+                            style="background-color: transparent;">
                     </div>
-                    <div class="form-group">
-                        <h4>Leave a comment</h4>
-                        <label for="message">Message</label>
-                        <textarea name="msg" id=""msg cols="30" rows="5" class="form-control" style="background-color: black;"></textarea>
+                    <div class="form-group form5">
+                        <label class="label1" for="message">Message</label>
+                        <textarea name="msg" id="" msg cols="30" rows="5" class="form-control"
+                            style="background-color: transparent;"></textarea>
                     </div>
-                    <div class="form-group">
-                        <button type="button" id="post" class="btn">Post Comment</button>
+                    <div class="form-group form5 back">
+                         <a href="" class="btn comment-button"><i class="bi bi-arrow-left"
+                                 style='font-size:30px; font-weight: 800;'></i></a>
+                        <button type="button" class="btn post-comment">Post Comment</button>
                     </div>
                 </form>
             </div>
             <div class="col-sm-5 col-md-6 col-12 pb-4">
-                <h1>Comments</h1>
                 <div class="comment mt-4 text-justify float-left">
-                    <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
+                    <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius"
+                        alt="User-Profile-Image">
                     <h4>Jhon Doe</h4>
-                    <span>- 20 October, 2018</span>
                     <br>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
+                        vero sequi velit molestias doloremque molestiae dicta?</p>
+                        <hr style="color: black;">
+                        <div class="foot">
+                        <p style="color: black; padding-top: 5%;">- 20 October, 2018</p>
+                        <a href=""><button class="btn comment-button red"><i
+                                    class="bi bi-trash3-fill" style='font-size:30px;'></i></button></a>
+                        </div>
                 </div>
             </div>
         </div>

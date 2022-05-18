@@ -1,11 +1,7 @@
 /* navbar */
 .navbar {
-    background: rgb(168, 210, 210);
+    background: #d5dfe1;
 }
-.navbar:hover {
-    background: #d5dfe1 !important;
-  }
-  
   .nav-link:hover {
     background: #d5dfe1 !important;
     border-radius: 0.5em;

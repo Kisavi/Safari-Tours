@@ -2,22 +2,22 @@
     background: url("../images/mald.jpg");
     background-position: center;
     background-size: cover;
+    height: 100vh;
 }
 .padding {
     padding: 3rem !important;
-    margin-top: 6rem !important;
 }
 
 .user-card-full {
     overflow: hidden;
 }
 
-.card {
+.profile-card {
     border-radius: 15px;
     -webkit-box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
     box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
     border: none;
-    margin-bottom: 30px;
+    margin-top: 5rem;
 }
 
 .m-r-0 {
@@ -34,7 +34,7 @@
 
 .bg-c-lite-green {
         background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
-    background: linear-gradient(to right, #ee5a6f, #f29263);
+    background: linear-gradient(to right, #50a1a5, #a56849);
 }
 
 .user-profile {
