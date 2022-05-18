@@ -16,10 +16,15 @@
      <link rel="stylesheet" href="{{url_for('static',filename='css/profile.css')}}">
      <link rel="stylesheet" href="{{url_for('static',filename='css/comments.css')}}">
      <link rel="stylesheet" href="{{url_for('static',filename='css/landing-page.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/navbar.css')}}">
     {% endblock %}
 </head>
 <body>
 
+  <!-- Navbar block  -->
+  {% block navbar %}
+  {% include 'navbar.html' %}
+  {% endblock %}
 
 <!--block content-->
 <div>
