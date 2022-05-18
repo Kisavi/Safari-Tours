@@ -1,0 +1,27 @@
+.gradient-custom {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/signup.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-card {
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2px);
+-webkit-backdrop-filter: blur(2px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.blue {
+    color: blue;
+}
+
+.blue:hover {
+    color: rgb(103, 173, 234);
+}
