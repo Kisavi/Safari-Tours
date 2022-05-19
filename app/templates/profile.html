@@ -13,7 +13,7 @@
                                                                     <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image">
                                                                 </div>
                                                                 <h6 class="f-w-600">{{current_user.username}}</h6>
-                                                                <p>Bio</p>
+                                                                <p>Happy days are here again!</p>
                                                                 <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                                                             </div>
                                                         </div>
@@ -33,10 +33,10 @@
                                                                 <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Visits</h6>
                                                                 <div class="row">
                                                                     <div class="col-sm-6">
-                                                                        <p class="m-b-10 f-w-600">Recent visits</p>
+                                                                        <p class="m-b-10 f-w-600">Recent bookings</p>
                                                                         {% if bookings %}
                                                                         {% for booking in bookings %}
-                                                                        <h6 class="text-muted f-w-400">{{bookings.destination}}</h6>
+                                                                        <h6 class="text-muted f-w-400">{{booking.destination}}</h6>
                                                                         {% endfor %}
                                                                         {% endif %}
                                                                     </div>

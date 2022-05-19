@@ -14,8 +14,8 @@
                         <hr style="color: black;">
                         <div class="foot">
                         <p style="color: black; padding-top: 5%;">{{review.date.strftime('%Y-%m-%d')}}</p>
-                        <a href=""><button class="btn comment-button red"><i
-                                    class="bi bi-trash3-fill" style='font-size:30px;'></i></button></a>
+                        <a href="/delete/{{review.id}}"><button class="btn comment-button red"><i
+                                    class="bi bi-trash3-fill" style='font-size:26px;'></i></button></a>
                         </div>
                 </div>
             {% endfor %}

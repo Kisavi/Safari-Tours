@@ -1,5 +1,5 @@
-from . import main
-from flask import render_template, url_for, redirect, request
+
+from flask import render_template, url_for, redirect, request, flash
 from . import main
 from flask_login import login_required, current_user
 from ..models import Booking, Review
@@ -28,6 +28,16 @@ def review():
         return redirect(url_for('main.review'))
 
     return render_template('comments.html', reviews=reviews)
+
+
+@main.route('/delete/<int:review_id>', methods=['GET', 'POST'])
+@login_required
+def deletereview(review_id):
+    comment = Review.query.get_or_404(review_id)
+    db.session.delete(comment)
+    db.session.commit()
+    flash("Review deleted!", category='success')
+    return render_template('comments.html')
 
 
 @main.route('/bookings', methods=['POST', 'GET'])
