@@ -2,7 +2,7 @@ from . import main
 from flask import render_template, url_for, redirect, request
 from . import main
 from flask_login import login_required, current_user
-from ..models import Booking, Comment
+from ..models import Booking, Review
 from app import db
 
 
@@ -12,22 +12,25 @@ def index():
     return render_template('landing-page.html')
 
 
-@main.route('/login')
-def login():
-    return render_template('login.html')
-
-
-@main.route('/signup')
-def signup():
-    return render_template('sign-up.html')
-
-
-@main.route('/review')
+@main.route('/review', methods=['POST', 'GET'])
 def review():
+    if request.method == 'POST':
+        # collect review details from the form submitted by the user
+        nickname = request.form.get('nickname')
+        comment = request.form.get('comment')
+        user_id = current_user._get_current_object().id
+        # create a new blog object from our Blog class
+        new_review = Review(nickname=nickname, comment=comment, user_id=user_id)
+        # save the new blog obj in our db
+        db.session.add(new_review)
+        db.session.commit()
+        return redirect(url_for('main.review'))
+
     return render_template('comments.html')
 
 
 @main.route('/profile')
+@login_required
 def profile():
     return render_template('profile.html')
 

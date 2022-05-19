@@ -30,7 +30,7 @@ class Booking(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
 
-class Comment(db.Model):
+class Review(db.Model):
     """
     this Comment class helps us create new comments
     args: db.model which helps us connect our class to the db

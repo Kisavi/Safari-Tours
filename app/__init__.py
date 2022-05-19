@@ -27,7 +27,7 @@ def create_app(config_name):
     app.register_blueprint(auth_blueprint, url_prefix='/')
 
     # import our db object classes
-    from .models import User, Booking, Comment
+    from .models import User, Booking, Review
 
     create_database(app)
 
