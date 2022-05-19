@@ -15,6 +15,7 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(255))
     email = db.Column(db.String(255), unique=True)
     password = db.Column(db.String(255))
+    date = db.Column(db.DateTime(timezone=True), default=func.now())
     booking = db.relationship('Booking', backref='user', lazy='dynamic')
 
 
@@ -25,7 +26,7 @@ class Booking(db.Model):
     """
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(255))
-    email = db.Column(db.String(255), unique=True)
+    email = db.Column(db.String(255))
     destination = db.Column(db.String(500))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
