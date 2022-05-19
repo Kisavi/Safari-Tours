@@ -1,8 +1,13 @@
 from . import main
 from flask import render_template, url_for, redirect, request
+from . import main
+from flask_login import login_required, current_user
+from ..models import Booking, Comment
+from app import db
 
 
 @main.route('/')
+@login_required
 def index():
     return render_template('landing-page.html')
 

@@ -48,10 +48,10 @@ def login():
             if check_password_hash(user.password, password):
                 flash('logged in successfully!', category='success')
                 login_user(user)
-                return redirect(url_for('main.home'))
+                return redirect(url_for('main.index'))
             else:
                 flash('You entered wrong credentials', category='error')
         else:
             flash('No user with such details exists', category='error')
 
-    return render_template('sign-up.html', user=current_user)
+    return render_template('login.html', user=current_user)
