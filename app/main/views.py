@@ -14,6 +14,7 @@ def index():
 
 @main.route('/review', methods=['POST', 'GET'])
 def review():
+    reviews = Review.query.all()
     if request.method == 'POST':
         # collect review details from the form submitted by the user
         nickname = request.form.get('nickname')
@@ -26,7 +27,7 @@ def review():
         db.session.commit()
         return redirect(url_for('main.review'))
 
-    return render_template('comments.html')
+    return render_template('comments.html', reviews=reviews)
 
 
 @main.route('/profile')

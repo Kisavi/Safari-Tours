@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% from 'comments-macro.html' import display_comments %}
+{% from 'comments-macro.html' import display_reviews %}
 
 {% block content %}
 <!-- Main Body -->
@@ -20,14 +20,14 @@
                             style="background-color: transparent;"></textarea>
                     </div>
                     <div class="form-group form5 back">
-                         <a href="" class="btn comment-button"><i class="bi bi-arrow-left"
+                         <a href="/" class="btn comment-button"><i class="bi bi-arrow-left"
                                  style='font-size:30px; font-weight: 800;'></i></a>
-                        <button type="button" class="btn post-comment">Post Review</button>
+                        <button type="submit" class="btn post-comment">Post Review</button>
                     </div>
                 </form>
             </div>
             <div class="col-sm-5 col-md-6 col-12 pb-4">
-               <div>{{ display_comments(comments) }}</div>
+               <div>{{ display_reviews(reviews) }}</div>
             </div>
         </div>
     </div>
