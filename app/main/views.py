@@ -6,28 +6,27 @@ from flask import render_template, url_for, redirect, request
 def index():
     return render_template('landing-page.html')
 
+
 @main.route('/login')
 def login():
-    return render_template('login.html')    
+    return render_template('login.html')
+
 
 @main.route('/signup')
 def signup():
-    return render_template('sign-up.html')    
+    return render_template('sign-up.html')
+
 
 @main.route('/review')
 def review():
     return render_template('comments.html')
 
+
 @main.route('/profile')
 def profile():
-    return render_template('profile.html') 
+    return render_template('profile.html')
 
 
 @main.route('/bookings')
 def bookings():
-    return render_template('bookings.html')   
-
-
-@main.route('/landing')
-def landing():
-    return render_template('landing-page.html')           
+    return render_template('bookings.html')
