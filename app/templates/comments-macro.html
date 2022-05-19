@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% macro display_comments(comments) %}
+<div class="commentor">
+    <div class="row">
+        <div class="col-md-12">
+            {% if comments %}
+            {% for comment in comments %}
+             <div class="comment mt-4 text-justify float-left">
+                    <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius"
+                        alt="User-Profile-Image">
+                    <h4>Jhon Doe</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
+                        vero sequi velit molestias doloremque molestiae dicta?</p>
+                        <hr style="color: black;">
+                        <div class="foot">
+                        <p style="color: black; padding-top: 5%;">- 20 October, 2018</p>
+                        <a href=""><button class="btn comment-button red"><i
+                                    class="bi bi-trash3-fill" style='font-size:30px;'></i></button></a>
+                        </div>
+                </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
