@@ -12,8 +12,8 @@
                                                                 <div class="m-b-25">
                                                                     <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image">
                                                                 </div>
-                                                                <h6 class="f-w-600">User Name</h6>
-                                                                <p>Bio</p>
+                                                                <h6 class="f-w-600">{{current_user.username}}</h6>
+                                                                <p>Happy days are here again!</p>
                                                                 <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                                                             </div>
                                                         </div>
@@ -23,18 +23,22 @@
                                                                 <div class="row">
                                                                     <div class="col-sm-6">
                                                                         <p class="m-b-10 f-w-600">Email</p>
-                                                                        <h6 class="text-muted f-w-400">user@gmail.com</h6>
+                                                                        <h6 class="text-muted f-w-400">{{current_user.email}}</h6>
                                                                     </div>
                                                                     <div class="col-sm-6">
-                                                                        <p class="m-b-10 f-w-600">Username</p>
-                                                                        <h6 class="text-muted f-w-400">User</h6>
+                                                                        <p class="m-b-10 f-w-600">Account created on</p>
+                                                                        <h6 class="text-muted f-w-400">{{current_user.date.strftime('%Y-%m-%d')}}</h6>
                                                                     </div>
                                                                 </div>
                                                                 <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Visits</h6>
                                                                 <div class="row">
                                                                     <div class="col-sm-6">
-                                                                        <p class="m-b-10 f-w-600">Recent visits</p>
-                                                                        <h6 class="text-muted f-w-400">Tsavo</h6>
+                                                                        <p class="m-b-10 f-w-600">Recent bookings</p>
+                                                                        {% if bookings %}
+                                                                        {% for booking in bookings %}
+                                                                        <h6 class="text-muted f-w-400">{{booking.destination}}</h6>
+                                                                        {% endfor %}
+                                                                        {% endif %}
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <p class="m-b-10 f-w-600">Favourite Visit</p>

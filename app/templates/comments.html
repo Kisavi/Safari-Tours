@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% from 'comments-macro.html' import display_comments %}
+{% from 'comments-macro.html' import display_reviews %}
 
 {% block content %}
 <!-- Main Body -->
@@ -7,11 +7,11 @@
     <div class="container">
         <div class="row gen">
             <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
-                <form id="algin-form" class="comment-form">
+                <form method="POST" id="algin-form" class="comment-form">
                     <h4>Leave a review</h4>
                     <div class="form-group form5">
-                        <label class="label1" for="name">Nickname</label>
-                        <input type="text" name="name" id="name" class="form-control input2"
+                        <label class="label1" for="nickname">Nickname</label>
+                        <input type="text" name="nickname" id="nickname" class="form-control input2"
                             style="background-color: transparent;">
                     </div>
                     <div class="form-group form5">
@@ -20,14 +20,14 @@
                             style="background-color: transparent;"></textarea>
                     </div>
                     <div class="form-group form5 back">
-                         <a href="" class="btn comment-button"><i class="bi bi-arrow-left"
+                         <a href="/" class="btn comment-button"><i class="bi bi-arrow-left"
                                  style='font-size:30px; font-weight: 800;'></i></a>
-                        <button type="button" class="btn post-comment">Post Review</button>
+                        <button type="submit" class="btn post-comment">Post Review</button>
                     </div>
                 </form>
             </div>
             <div class="col-sm-5 col-md-6 col-12 pb-4">
-               <div>{{ display_comments(comments) }}</div>
+               <div>{{ display_reviews(reviews) }}</div>
             </div>
         </div>
     </div>
