@@ -48,7 +48,7 @@
 
 - User can leave a review of previous visits.
 
-## <a href="https://tours-nd-travel.herokuapp.com///">Live preview of the site</a>
+## <a href=" https://safaritours.herokuapp.com/">Live preview of the site</a>
 
 ## Cloning
 * On your terminal, run the following commands:
